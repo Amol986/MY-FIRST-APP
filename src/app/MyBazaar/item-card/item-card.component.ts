@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-item-card',
@@ -6,6 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./item-card.component.css']
 })
 export class ItemCardComponent implements OnInit {
+
+ @Input() item: any
+  // item: any = {
+  //   "Id":1,
+  //   "itemName":"water bottel",
+  //   "price":200,
+  //   "MFG":"sura waters"
+  // }
 
   constructor() { }
 
