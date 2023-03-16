@@ -1,1 +1,5 @@
-<p>item-list works!</p>
+<div class="row" style="margin-top: 20px;">
+  <div *ngFor="let item of items" class="shadow-lg col-sm-3">
+    <app-item-card [item] = "item"></app-item-card>
+  </div>
+</div>
